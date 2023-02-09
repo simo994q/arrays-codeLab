@@ -6,20 +6,20 @@ const myExtrasListElement = document.getElementById('extraList');
 
 myExtrasInput.addEventListener('change', addExtra);
 
-
 function addExtra() {
     let selectedValue = myExtrasInput.value
     myExtras.push(selectedValue)
     updateExtras()
 }
 
-
-
-
 function updateExtras() {
         let myExtrasLast = myExtras.slice(-1)
         myExtrasListElement.innerHTML += `<p>${myExtrasLast}</p>`
 }
+
+
+
+
 
 
 
